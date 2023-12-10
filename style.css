@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Poppins" , sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("fotogradiente.jpg");
+    background-size: cover;
+    background-position: center;   
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    background: linear-gradient(to right, rgb(0, 0, 0)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #040805;
+    color: white;
+}
+
+/* Ajuste do tamanho da logo dentro do elemento */
+
+.logo img {
+    width: 0px; /* zerei pra deixar sem logo*/
+    height: 0px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    margin: auto; 
+    align-items: center;
+    padding: 10px;
+    
+}
+
+/* espaçamento entre os topicos do menu */
+
+.nav-list li {
+    margin-right: 70px;
+    display: inline-block;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav-list a:hover {
+    background-color: #05341a; /* Cor de fundo ao passar o mouse */
+}
+
+.social-buttons {
+    margin-left: 10px; /* Ajuste da margem superior  */
+}
+
+.social-buttons button {
+    background-color: #000000;
+    color: white;
+    border-radius: 5px
+    padding:15px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'Alata', sans-serif;
+}
+
+.social-buttons button:hover {
+    background-color: #034e00; /* Cor de fundo ao passar o mouse */
+}
+
+/* centralizando a seçoes */
+#sobre, #redes-sociais {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: "Poppins" , sans-serif;
+}
+
+
+.section {
+    padding: 70px;
+}
+
+.projects-section {
+    text-align: center;
+    background-color: rgb(5, 8, 2);
+    color: white;
+    padding: 20px;
+    margin-top: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+.project p {
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+.projects-section h2 {
+    margin-bottom: 20px;
+}
+
+.projects-section img {
+    max-width: 100%; 
+    height: auto; /* Mantém a proporção original da imagem */ 
+    border-radius: 10px; /* Bordas arredondadas  */
+    margin: 0 auto; 
+    display: block; 
+    margin-bottom: 10px; /* Adiciona espaço entre as imagens e o texto */
+    width: 500px; /* Ajuste a largura  */
+    height: 300px; /* Ajuste a altura  */
+}
+
+.github-button {
+    background-color: #24292e; /* Cor do GitHub */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px; /* Adicione margem superior  */
+}
+
+
