@@ -1,0 +1,201 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Estilos para a Navbar */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #7a0a5a; /* Vinho escuro */
+    padding: 1rem;
+}
+  
+.navbar li {
+    margin: 0 1rem;
+}
+  
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+  
+/* Hero Section */
+#hero {
+    background-color: #ffd8de; /* Rosa claro */
+    padding: 3rem 2rem;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #b0079f;
+}
+
+.hero-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 45%;
+}
+
+.hero-image img {
+    max-width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 3px solid #3d0333; /* Borda vinho */
+}
+
+/* Seção de Experiência */
+#experience {
+    padding: 40px;
+    background-color: #f8f9fa; /* Cor de fundo suave */
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #450129;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Sempre 2 colunas */
+    gap: 3rem; /* Aumenta o espaçamento entre os cards */
+}
+
+.experience-card {
+    background-color: #fff;
+    border-left: 4px solid #c2185b; /* Rosa escuro */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.experience-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #c2185b; /* Cor do título rosa escuro */
+}
+
+.experience-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Seção de Formação */
+.education-card {
+    background-color: #fff;
+    border-left: 4px solid #c2185b; /* Rosa escuro */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.education-card h3, .education-card p {
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    gap: 1rem;
+}
+
+.carousel-item {
+    background-color: #FFC0CB;
+    padding: 1rem;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Na Mídia */
+.media-links {
+    list-style: none;
+    padding: 0;
+}
+
+.media-links li {
+    margin: 1rem 0;
+}
+
+.media-links a {
+    color: #c01f54;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Rodapé Contato */
+#contact {
+    background-color: #a34579;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 1rem;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 60%;
+        margin-top: 2rem;
+    }
+
+    .experience-container {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+}
