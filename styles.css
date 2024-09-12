@@ -4,7 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 /* Estilos para a Navbar */
 .navbar {
     list-style: none;
@@ -13,18 +16,18 @@
     background-color: #7a0a5a; /* Vinho escuro */
     padding: 1rem;
 }
-  
+
 .navbar li {
     margin: 0 1rem;
 }
-  
+
 .navbar a {
     color: white;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
-  
+
 /* Hero Section */
 #hero {
     background-color: #ffd8de; /* Rosa claro */
@@ -54,7 +57,7 @@
 }
 
 .hero-text p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     line-height: 1.6;
 }
@@ -68,7 +71,7 @@
 
 .hero-image img {
     max-width: 500px;
-    height: 500px;
+    height: auto;
     border-radius: 50%;
     border: 3px solid #3d0333; /* Borda vinho */
 }
@@ -89,8 +92,8 @@ h2 {
 
 .experience-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Sempre 2 colunas */
-    gap: 3rem; /* Aumenta o espaçamento entre os cards */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptação automática para diferentes tamanhos de tela */
+    gap: 1.5rem;
 }
 
 .experience-card {
@@ -115,87 +118,122 @@ h2 {
 }
 
 /* Seção de Formação */
+#education {
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
 .education-card {
     background-color: #fff;
     border-left: 4px solid #c2185b; /* Rosa escuro */
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    text-align: center; /* Centraliza o conteúdo do card */
 }
 
-.education-card h3, .education-card p {
+.education-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #c2185b;
+}
+
+.education-card p {
     font-family: 'Poppins', sans-serif;
     color: #555;
 }
 
-/* Carousel */
-.carousel {
+.unb-logo img {
+    max-width: 60px; /* Tamanho da logo da UnB */
+    display: block;
+    margin-top: 10px;
+}
+
+/* Seção de Projetos */
+#projects {
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #450129;
+}
+
+.project-card p {
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+}
+
+/* Seção de Mídia */
+#media {
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.media-carousel {
     display: flex;
-    gap: 1rem;
+    overflow: hidden;
+    position: relative;
 }
 
 .carousel-item {
-    background-color: #FFC0CB;
-    padding: 1rem;
-    border-radius: 10px;
-    flex: 1;
-    text-align: center;
+    min-width: 200px;
+    margin-right: 20px;
 }
 
-/* Na Mídia */
-.media-links {
-    list-style: none;
-    padding: 0;
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-.media-links li {
-    margin: 1rem 0;
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.media-links a {
-    color: #c01f54;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Rodapé Contato */
-#contact {
-    background-color: #a34579;
+.carousel-controls button {
+    background-color: #7a0a5a;
     color: white;
-    padding: 2rem;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Footer */
+#contact {
+    padding: 20px;
+    background-color: #7a0a5a;
+    color: white;
     text-align: center;
 }
 
-.social-icons a {
-    margin: 0 1rem;
-}
-
-.social-icons img {
+.social-icons a img {
     width: 40px;
-    height: 40px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    #hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text {
-        max-width: 100%;
-    }
-
-    .hero-image {
-        max-width: 60%;
-        margin-top: 2rem;
-    }
-
-    .experience-container {
-        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
-    }
-
-    .carousel {
-        flex-direction: column;
-    }
+    margin: 0 10px;
 }
