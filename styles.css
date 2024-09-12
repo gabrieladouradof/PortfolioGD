@@ -30,9 +30,9 @@
 
 /* Hero Section */
 #hero {
-    background-color: #ffd8de; /* Rosa claro */
+    background-color: #fcd6e4; /* Rosa claro */
     padding: 3rem 2rem;
-    color: #000;
+    color: #1f0019;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +84,7 @@
 
 h2 {
     font-family: 'Poppins', sans-serif;
-    color: #450129;
+    color: #640b3f;
     text-align: center;
     font-size: 28px;
     margin-bottom: 20px;
@@ -144,10 +144,17 @@ h2 {
 }
 
 .unb-logo img {
-    max-width: 60px; /* Tamanho da logo da UnB */
-    display: block;
+    max-width: 100px; /* Tamanho da logo da UnB */
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
 }
+.unb-logo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
 
 /* Seção de Projetos */
 #projects {
@@ -376,3 +383,63 @@ h2 {
     width: 40px; /* Tamanho dos ícones */
     height: auto;
 }
+
+/* Seção de Tecnologias */
+#tech {
+    padding: 40px;
+    background-color: #f8f9fa; /* Cor de fundo suave */
+    text-align: center;
+}
+
+#tech h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #450129;
+    margin-bottom: 20px;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tech-badges img {
+    height: 40px;
+}
+/* Seção de Contato */
+#contact {
+    padding: 40px;
+    background-color: #fbc3dc;
+    text-align: center;
+}
+
+#contact h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #4d1134;
+    margin-bottom: 20px;
+}
+
+#contact .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#contact .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+#contact .social-icons img {
+    width: 100%;
+    height: 100%;
+    filter: invert(100%); /* Torna os ícones brancos */
+}
+
